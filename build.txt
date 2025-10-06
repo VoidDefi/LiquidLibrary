@@ -1,0 +1,3 @@
+displayName = Liquid Library
+author = Defi
+version = 0.1
