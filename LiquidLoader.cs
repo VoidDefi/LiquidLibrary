@@ -79,7 +79,7 @@ namespace LiquidLibrary
 
             LiquidSets.CanEvaporate = new bool[liquidCount];
             LiquidSets.Viscosity = new int[liquidCount];
-            LiquidSets.WaterfallsLength = new int[liquidCount];
+            LiquidSets.WaterfallLength = new int[liquidCount];
             LiquidSets.DefaultOpacity = new float[liquidCount];
 
             LiquidSets.SetVanillaValues();
@@ -95,7 +95,7 @@ namespace LiquidLibrary
 
                 LiquidSets.CanEvaporate[liquidIndex] = liquid.canEvaporate;
                 LiquidSets.Viscosity[liquidIndex] = liquid.viscosity;
-                LiquidSets.WaterfallsLength[liquidIndex] = liquid.waterfallLength;
+                LiquidSets.WaterfallLength[liquidIndex] = liquid.waterfallLength;
                 LiquidSets.DefaultOpacity[liquidIndex] = liquid.defaultOpacity;
             }
         }
