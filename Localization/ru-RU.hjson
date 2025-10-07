@@ -1,0 +1,15 @@
+Mods: {
+	LiquidLibrary: {
+		Configs: {
+			LiquidConfig: {
+				DisplayName: Конфигурация жидкостей
+				Headers.Mods.LiquidLibrary.Config.Liquid: Конфигурация жидкостей
+
+				automaticDrying: {
+					Label: Автоматически очищать застроенные жидкости
+					Tooltip: ""
+				}
+			}
+		}
+	}
+}

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using Terraria;
 using Terraria.ID;
@@ -56,7 +57,12 @@ namespace LiquidLibrary
                     if (type.IsAbstract) continue;
 
                     if (type.IsSubclassOf(modLiquidType))
-                        ((ModLiquid)Activator.CreateInstance(type)).BypassRegister();
+                    {
+                        ModLiquid newLiquid = ((ModLiquid)Activator.CreateInstance(type));
+
+                        if (!liquids.Any(l => l.GetType() == newLiquid.GetType()))
+                            newLiquid.BypassRegister();
+                    }
 
                     //if (globalLiquidType.IsAssignableFrom(type))
                     //    globalLiquids.Add((GlobalLiquid)Activator.CreateInstance(type));

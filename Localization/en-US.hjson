@@ -1,0 +1,15 @@
+Mods: {
+	LiquidLibrary: {
+		Configs: {
+			LiquidConfig: {
+				DisplayName: Liquid Config
+				Headers.Mods.LiquidLibrary.Config.Liquid: Liquid Config
+
+				automaticDrying: {
+					Label: Automatically clean built-up liquids
+					Tooltip: ""
+				}
+			}
+		}
+	}
+}
